@@ -1,0 +1,170 @@
+.header-top {
+    padding: 11px 0 9px;
+
+    .container-fluid {
+        width: 1234px;
+        padding: 0;
+
+        .row {
+            margin: 0;
+
+            hr {
+                color: #8f8f8f;
+            }
+
+            &>div {
+                height: 35px;
+                padding: 0;
+            }
+
+            .login {
+                a {
+                    color: #8f8f8f;
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #83AE3E;
+                    transition: .3s;
+
+                }
+
+                a:hover {
+                    color: #689029;
+                }
+
+                i {
+                    color: #8f8f8f;
+                    font-size: 16px;
+                }
+            }
+
+            .info {
+                ul {
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        display: inline-block;
+                        margin-left: 55px;
+
+                        a {
+                            color: #8f8f8f;
+                            text-decoration: none;
+                            font-size: 14px;
+                            transition: .3s;
+
+                        }
+
+                        a:hover {
+                            color: #689029;
+                        }
+
+                        i {
+                            color: #8f8f8f;
+                            font-size: 16px;
+                        }
+                    }
+
+                    li:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+
+            .socials {
+                ul {
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        padding: 0 6px;
+                        display: inline-block;
+
+                        a {
+                            i {
+                                color: #8f8f8f;
+                                font-size: 16px;
+                                transition: .3s;
+
+                            }
+                        }
+
+                        a:hover {
+                            i {
+                                color: #46474a;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+}
+
+.header-bottom {
+    .container-fluid {
+        width: 1234px;
+        hr{
+            margin-bottom: 2px;
+        }
+
+        .col-top {
+            padding-bottom: 20px;
+            position: relative;
+
+            .right {
+                position: absolute;
+                right: 0px;
+                top: 0;
+                a {
+                    display: inline-block;
+                    right: 0px;
+                    top: 0;
+                    padding: 7px 21px;
+                    background-color: #fc8816;
+                    font-size: 17px;
+                    text-decoration: none;
+                    color: aliceblue;
+                    font-weight: bold;
+                    border: 1px solid #fc8816;
+                    border-radius: 12px;
+                }
+            }
+        }
+
+        .col-bottom{
+            padding: 10px 15px;
+            background-color: #ffffff;
+            ul{
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                li{
+                    display: inline-block;
+                    margin-left: 50px;
+                    a{
+                        display: inline-block;
+                        color: #46474a;
+                        text-decoration: none;
+                        font-size: 17px;
+                        font-weight: bold;
+                        padding: 5px;
+                        text-transform: uppercase;
+                        transition: .3s;
+                    }
+                    a:hover{
+                        color: #689029;
+                    }
+                }
+                li:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+    }
+}
