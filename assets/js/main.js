@@ -75,11 +75,68 @@ function header() {
 
   });
 
+
+  
+  
+$('.openNav').click(function (e) { 
+  console.log('clicklendi')
+  e.preventDefault();
+  if(document.getElementById("mySidenav").style.width == 0 || document.getElementById("mySidenav").style.width == "0px"){
+
+   document.getElementById("mySidenav").style.width = "350px";
+
+   if ($('.overlay').css('display')=='none') {
+       $('.overlay').css('display', 'block');
+   }
+
+  }
+  else{
+   document.getElementById("mySidenav").style.width = "0px";
+   $('.overlay').css('display', 'none');
+   
+  }
+
+});
+
+$('.closebtn').click(function (e) { 
+  e.preventDefault();
+  document.getElementById("mySidenav").style.width = "0";
+  $('.overlay').css('display', 'none');
+ });
+ 
+ 
+ 
+ $('.overlay').click(function (e) { 
+     e.preventDefault();
+     document.getElementById("mySidenav").style.width = "0px";
+     $('.overlay').css('display', 'none');
+ });
+
+ 
+ $('.col-bottom ul').css('left', $(window).width()-415);
+
+ $(window).resize(function () { 
+
+   $('.col-bottom ul').css('left', $(window).width()-415);
+
+ });
+
 }
 
 // Footer
 function footer() {
 }
+
+
+
+
+
+ 
+
+ ///////////////////////////////////////////////////////
+
+
+
 
 $(document).scroll(function () {
 
@@ -92,10 +149,17 @@ $(document).scroll(function () {
 
     }
 
+});
 
+
+
+/////////////  Forms Bootstrap js
+
+
+
+ 
 });
 
 
 
 
-});
