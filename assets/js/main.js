@@ -111,12 +111,25 @@ $('.closebtn').click(function (e) {
      $('.overlay').css('display', 'none');
  });
 
- 
- $('.col-bottom ul').css('left', $(window).width()-415);
+
+ if ($(window).width()>400 ) {
+
+ $('.col-bottom ul').css('left', $(window).width()-405);
+ $('.col-bottom ul #lang').css('margin-left','50px');
+ $('.header-bottom .col-bottom .logo img').css('display','inherit');
+
+   
+ }
+
+ if ($(window).width()<=400 ) {
+
+  $('.col-bottom ul').css('left', $(window).width()-175);
+  $('.col-bottom ul #lang').css('margin-left','0px');
+  $('.header-bottom .col-bottom .logo img').css('display','none');
+    
+  }
 
  $(window).resize(function () { 
-
-   $('.col-bottom ul').css('left', $(window).width()-415);
 
    if ($(window).width()>951) {
      if ($('#mySidenav').css('width')=='270px') {
@@ -124,6 +137,26 @@ $('.closebtn').click(function (e) {
       $('.overlay').css('display','none');
      }
    }
+
+
+   
+ if ($(window).width()<=400 ) {
+
+  $('.col-bottom ul').css('left', $(window).width()-175);
+  $('.col-bottom ul #lang').css('margin-left','0px');
+
+  $('.header-bottom .col-bottom .logo img').css('display','none');
+    
+  }
+
+ if ($(window).width()>400 ) {
+
+  $('.col-bottom ul').css('left', $(window).width()-405);
+  $('.col-bottom ul #lang').css('margin-left','50px');
+  $('.header-bottom .col-bottom .logo img').css('display','inherit');
+
+
+  }
 
  });
 
@@ -139,10 +172,7 @@ function footer() {
 
  
 
- ///////////////////////////////////////////////////////
-
-
-
+ ///////////////////////////////////////////////////////  scroll
 
 $(document).scroll(function () {
 
@@ -159,13 +189,41 @@ $(document).scroll(function () {
 
 
 
-/////////////  Forms Bootstrap js
+///////////////////////////////////////   Main  /////////////////////////////
+
+  ///// section first-carousel
+
+
+  let photo1=$('.photo-1').attr('data-setbg');
+  $('.photo-1').css("background-image",`url(${photo1})`);
+  let photo2=$('.photo-2').attr('data-setbg');
+  $('.photo-2').css("background-image",`url(${photo2})`);
+  let photo3=$('.photo-3').attr('data-setbg');
+  $('.photo-3').css("background-image",`url(${photo3})`);
+
+  
+$('.photo-carousel').owlCarousel({
+  loop:true,
+  nav:false,
+  dots:false,
+  autoplay:false,
+  autoplayTimeout:3000,
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+});
+
 
 
 
  
 });
-
 
 
 

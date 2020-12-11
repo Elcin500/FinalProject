@@ -77,8 +77,9 @@
                 }
             }
 
-            .third-col{
+            .third-col {
                 padding: 0 15px;
+
                 ul {
                     margin-top: 20px;
                     padding-left: 0;
@@ -103,16 +104,17 @@
                 }
             }
 
-            .fourth-col{
+            .fourth-col {
                 &>p {
                     margin-top: 25px;
                 }
 
-                form{
-                    input{
+                form {
+                    input {
                         width: 270px;
                     }
-                    button{
+
+                    button {
                         width: 200px;
                         text-transform: uppercase;
                         font-weight: 500;
@@ -120,9 +122,10 @@
                         border-color: #83AE3E;
                         border-radius: 7px;
                     }
-                    button:hover{
-                        
-                        background-color:#689029;
+
+                    button:hover {
+
+                        background-color: #689029;
                         border-color: #689029;
                     }
                 }
@@ -131,42 +134,58 @@
     }
 
 
-    .footer-bottom{
+    .footer-bottom {
         text-align: right;
         padding-top: 25px;
 
-      .container-fluid{
-          padding: 0 66px;
-        
-        ul {
-            padding: 0;
-            margin: 0;
+        .container-fluid {
+            padding: 0 66px;
 
-            li {
-                padding: 0 6px;
-                display: inline-block;
+            ul {
+                padding: 0;
+                margin: 0;
 
-                a {
-                    i {
-                        color: #8f8f8f;
-                        font-size: 16px;
-                        transition: .3s;
+                li {
+                    padding: 0 6px;
+                    display: inline-block;
+
+                    a {
+                        i {
+                            color: #8f8f8f;
+                            font-size: 16px;
+                            transition: .3s;
+                        }
                     }
-                }
 
-                a:hover {
-                    i {
-                        color: #fff;
+                    a:hover {
+                        i {
+                            color: #fff;
+                        }
                     }
                 }
             }
         }
-      }
     }
 
     @media screen and (max-width:991px) {
-        .footer-bottom{
-            text-align: left!important;
+        .footer-bottom {
+            text-align: left !important;
         }
     }
+
+
+
+    @media screen and (max-width:350px) {
+        .footer-top {
+            .fourth-col {
+                form {
+                    input {
+                        width: 200px!important;
+                    }
+                }
+            }
+        }
+    }
+
+
 }

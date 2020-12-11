@@ -1,5 +1,103 @@
-main{
-    height: 500px;
-    background-color: black;
-}
+main {
+    .photo-carousel {
+        .item {
+            background-color: greenyellow;
+            height: 420px;
+            width: 100%;
+            position: relative;
 
+            .small-description {
+                position: absolute;
+                padding: 30px;
+                background-color: rgba(0, 0, 0, 0.6);
+                bottom: 20px;
+                left: 50px;
+                width: 370px;
+
+                h3 {
+                    color: #fff;
+                }
+
+                hr {
+                    width: 70px;
+                    height: 3px;
+                    color: #689029;
+                    opacity: 1;
+                }
+
+                p {
+                    color: #fff;
+                }
+
+                span.cost {
+                    font-size: 24px;
+                    color: #fc8816;
+
+                    .badge {
+                        color: #fc8816;
+                        padding-left: 1px;
+                    }
+                }
+
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 10px 35px;
+                    background-color: #83AE3E;
+                    font-size: 18px;
+                    font-weight: 400;
+                    border: 1px;
+                    border-radius: 7px;
+                    margin-top: 30px;
+                    margin-left: 30px;
+                }
+
+                a:hover {
+                    background-color: #689029;
+                }
+
+            }
+
+
+
+            @media screen and (max-width:450px) {
+                .small-description{
+                    left: 70px;
+                width: 270px;
+                    p{
+                        display: none;
+                    }
+                }
+            }
+
+            @media screen and (max-width:360px) {
+                .small-description{
+                    left: 40px;
+                }
+            }
+
+
+        }
+
+        .owl-item.active {
+            .small-description {
+                animation-name: 'down';
+                animation-duration: 1s;
+            }
+        }
+
+        @keyframes down {
+            from {
+                bottom: 90%;
+                opacity: .4;
+            }
+
+            to {
+                bottom: 5%;
+                opacity: 1;
+            }
+        }
+
+    }
+}
