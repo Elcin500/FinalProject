@@ -115,7 +115,7 @@
   color: aliceblue;
   font-weight: bold;
   border: 1px solid #ffa74f;
-  border-radius: 12px;
+  border-radius: 10px;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -262,19 +262,144 @@
   left: 0;
   background-color: #ffffff;
   overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   padding-top: 85px;
 }
 
-.sidenav .logoInBtn {
-  margin-bottom: 35px;
+.sidenav .side-top ul {
+  padding-left: 0;
 }
 
-.sidenav .symbol-img {
+.sidenav .side-top ul li {
+  margin-top: 4px;
+  list-style-type: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sidenav .side-top ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  color: #46474a;
+  padding: 11px 56px 11px 16px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sidenav .side-top ul li:hover {
+  background-color: #689029;
+}
+
+.sidenav .side-top ul li:hover a {
+  color: #fff;
+}
+
+.sidenav .add {
+  margin-right: 10px;
+}
+
+.sidenav .add a {
   display: inline-block;
-  height: 45px;
-  width: 139px;
+  padding: 7px 21px;
+  background-color: #fc8816;
+  font-size: 17px;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  border: 2px solid #fc8816;
+  border-radius: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.sidenav .add a:hover {
+  background-color: #fff;
+  border: 2px solid #fc8816;
+  color: #fc8816;
+}
+
+.sidenav hr {
+  margin-left: 20px;
+  margin-right: 25px;
+}
+
+.sidenav .side-bottom {
+  padding: 0 10px;
+}
+
+.sidenav .side-bottom > div {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.sidenav .side-bottom .login a {
+  color: #8f8f8f;
+  text-decoration: none;
+  color: #83AE3E;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.sidenav .side-bottom .login a:hover {
+  color: #689029;
+}
+
+.sidenav .side-bottom .login i {
+  margin-right: 5px;
+  color: #8f8f8f;
+  font-size: 16px;
+}
+
+.sidenav .side-bottom .info ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav .side-bottom .info ul li {
+  margin-bottom: 10px;
+}
+
+.sidenav .side-bottom .info ul li a {
+  color: #8f8f8f;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.sidenav .side-bottom .info ul li a:hover {
+  color: #689029;
+}
+
+.sidenav .side-bottom .info ul li i {
+  color: #8f8f8f;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.sidenav .side-bottom .socials ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav .side-bottom .socials ul li {
+  padding: 0 6px;
+  display: inline-block;
+}
+
+.sidenav .side-bottom .socials ul li a i {
+  color: #8f8f8f;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.sidenav .side-bottom .socials ul li a:hover i {
+  color: #689029;
+}
+
+.sidenav::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (max-width: 951px) {

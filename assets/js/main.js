@@ -79,11 +79,10 @@ function header() {
   
   
 $('.openNav').click(function (e) { 
-  console.log('clicklendi')
   e.preventDefault();
   if(document.getElementById("mySidenav").style.width == 0 || document.getElementById("mySidenav").style.width == "0px"){
 
-   document.getElementById("mySidenav").style.width = "350px";
+   document.getElementById("mySidenav").style.width = "270px";
 
    if ($('.overlay').css('display')=='none') {
        $('.overlay').css('display', 'block');
@@ -118,6 +117,13 @@ $('.closebtn').click(function (e) {
  $(window).resize(function () { 
 
    $('.col-bottom ul').css('left', $(window).width()-415);
+
+   if ($(window).width()>951) {
+     if ($('#mySidenav').css('width')=='270px') {
+      $('#mySidenav').css('width','0');
+      $('.overlay').css('display','none');
+     }
+   }
 
  });
 
