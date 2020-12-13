@@ -617,8 +617,8 @@ main .photo-carousel .item .small-description {
   position: absolute;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.6);
-  bottom: 20px;
-  left: 50px;
+  bottom: 65px;
+  left: 107px;
   width: 370px;
 }
 
@@ -694,7 +694,7 @@ main .photo-carousel .owl-item.active .small-description {
     opacity: .4;
   }
   to {
-    bottom: 5%;
+    bottom: 15.5%;
     opacity: 1;
   }
 }
@@ -705,8 +705,88 @@ main .photo-carousel .owl-item.active .small-description {
     opacity: .4;
   }
   to {
-    bottom: 5%;
+    bottom: 15.5%;
     opacity: 1;
   }
+}
+
+main section.search {
+  padding: 20px 0;
+}
+
+main section.search h2 {
+  margin-bottom: 30px;
+  color: #46474a;
+  font-weight: 700;
+}
+
+main section.search > .container {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  margin-top: -70px;
+  padding: 30px;
+  padding-bottom: 40px;
+  -webkit-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.22);
+}
+
+main section.search form > div {
+  margin-top: 25px;
+}
+
+main section.search form label {
+  color: #8f8f8f;
+}
+
+main section.search form .col-md-2 {
+  margin-right: 0px;
+  width: 14%;
+}
+
+main section.search form .col-md-1 {
+  margin-right: 0px;
+  width: 13%;
+}
+
+main section.search form .no-label input {
+  margin-top: 33px;
+}
+
+main section.search form input {
+  border-radius: 2px;
+  padding: 11px 20px 13px;
+}
+
+main section.search form input:focus {
+  border-color: #83AE3E;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main section.search form select {
+  border-radius: 2px;
+  padding: 11px 20px 13px;
+}
+
+main section.search form select:focus {
+  border-color: #83AE3E;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main section.search form button {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 42px;
+  background-color: #83AE3E;
+  border-color: #83AE3E;
+  margin-top: 33px;
+  margin-left: 22px;
+}
+
+main section.search form button:hover {
+  background-color: #689029;
+  border-color: #689029;
 }
 /*# sourceMappingURL=style.css.map */

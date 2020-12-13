@@ -10,8 +10,8 @@ main {
                 position: absolute;
                 padding: 30px;
                 background-color: rgba(0, 0, 0, 0.6);
-                bottom: 20px;
-                left: 50px;
+                bottom: 65px;
+                left: 107px;
                 width: 370px;
 
                 h3 {
@@ -62,17 +62,18 @@ main {
 
 
             @media screen and (max-width:450px) {
-                .small-description{
+                .small-description {
                     left: 70px;
-                width: 270px;
-                    p{
+                    width: 270px;
+
+                    p {
                         display: none;
                     }
                 }
             }
 
             @media screen and (max-width:360px) {
-                .small-description{
+                .small-description {
                     left: 40px;
                 }
             }
@@ -94,9 +95,95 @@ main {
             }
 
             to {
-                bottom: 5%;
+                bottom: 15.5%;
                 opacity: 1;
             }
+        }
+
+    }
+
+
+    section.search {
+        padding: 20px 0;
+
+        h2 {
+            margin-bottom: 30px;
+            color: #46474a;
+            font-weight: 700;
+        }
+
+        &>.container {
+            position: relative;
+            z-index: 1;
+            background-color: #fff;
+            margin-top: -70px;
+            padding: 30px;
+            padding-bottom: 40px;
+            box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.22);
+
+        }
+
+        form {
+
+            &>div{
+                margin-top: 25px;
+            }
+
+            label {
+                color: #8f8f8f;
+            }
+
+            .col-md-2 {
+                margin-right: 0px;
+                width: 14%;
+            }
+
+            .col-md-1 {
+                margin-right: 0px;
+                width: 13%;
+            }
+
+            .no-label {
+                input {
+                    margin-top: 33px;
+                }
+            }
+
+            input {
+                border-radius: 2px;
+                padding: 11px 20px 13px;
+            }
+
+            input:focus {
+                border-color: #83AE3E;
+                box-shadow: none;
+            }
+
+            select {
+                border-radius: 2px;
+                padding: 11px 20px 13px;
+            }
+
+            select:focus {
+                border-color: #83AE3E;
+                box-shadow: none;
+            }
+
+            button {
+                font-size: 18px;
+                font-weight: 500;
+                padding: 10px 42px;
+                background-color: #83AE3E;
+                border-color: #83AE3E;
+                margin-top: 33px;
+                margin-left: 22px;
+            }
+
+            button:hover {
+                background-color: #689029;
+                border-color: #689029;
+            }
+
         }
 
     }

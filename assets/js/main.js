@@ -220,6 +220,13 @@ $('.photo-carousel').owlCarousel({
 });
 
 
+///////////////////////  section search
+
+$('#search').change(function (e) { 
+  e.preventDefault();
+  console.log($('#search').val())
+});
+
 
 
  
