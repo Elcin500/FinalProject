@@ -772,10 +772,174 @@ main section.search form button {
   background-color: #83AE3E;
   border-color: #83AE3E;
   margin-top: 33px;
-  margin-left: 22px;
+  width: 100%;
 }
 
 main section.search form button:hover {
+  background-color: #689029;
+  border-color: #689029;
+}
+
+main section.popular-categories {
+  background-color: #f7f7f7;
+  padding: 90px 0px;
+}
+
+main section.popular-categories .container .title h2 {
+  color: #46474a;
+  font-size: 40px;
+}
+
+main section.popular-categories .container .title hr {
+  opacity: 1;
+  width: 80px;
+  background-color: #83AE3E;
+  color: #83AE3E;
+  height: 2px;
+  margin-top: 25px;
+}
+
+main section.popular-categories .container .catgeory {
+  margin-top: 30px;
+}
+
+main section.popular-categories .container .catgeory a {
+  position: relative;
+  display: inline-block;
+}
+
+main section.popular-categories .container .catgeory a:hover .caption {
+  background-color: #83AE3E;
+}
+
+main section.popular-categories .container .catgeory img {
+  width: 100%;
+  height: auto;
+}
+
+main section.popular-categories .container .catgeory .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 28px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main section.popular-categories .container .catgeory .caption .product-count {
+  margin-right: 5px;
+}
+
+main section.popular-categories .container .catgeory .caption p {
+  margin-bottom: 0;
+}
+
+main section.homes {
+  background-color: #fff;
+  padding: 90px 0px;
+}
+
+main section.homes .container .title {
+  margin-bottom: 55px;
+}
+
+main section.homes .container .title h2 {
+  color: #46474a;
+  font-size: 40px;
+}
+
+main section.homes .container .title hr {
+  opacity: 1;
+  width: 80px;
+  background-color: #83AE3E;
+  color: #83AE3E;
+  height: 2px;
+  margin-top: 25px;
+}
+
+main section.homes .container .single-home {
+  padding-bottom: 30px;
+}
+
+main section.homes .container .single-home > a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+main section.homes .container .single-home > a img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main section.homes .container .single-home > a:hover img {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+main section.homes .container .single-home .caption {
+  margin-top: 15px;
+}
+
+main section.homes .container .single-home .caption h4 a {
+  color: #83AE3E;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main section.homes .container .single-home .caption > span {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+}
+
+main section.homes .container .single-home .caption ul {
+  display: inline-block;
+  padding: 0;
+  margin-top: 15px;
+}
+
+main section.homes .container .single-home .caption ul li {
+  list-style-type: none;
+}
+
+main section.homes .container .single-home .caption ul li i {
+  color: #fc8816;
+  margin-right: 7px;
+}
+
+main section.homes .container .single-home .caption ul li span {
+  color: #8f8f8f;
+}
+
+main section.homes .container .single-home .caption .second-ul {
+  margin-left: 15px;
+}
+
+main section.homes .container .single-home .caption p {
+  font-size: 14px;
+}
+
+main section.homes .container > a {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 42px;
+  background-color: #83AE3E;
+  border-color: #83AE3E;
+  margin-top: 33px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 7px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main section.homes .container > a:hover {
   background-color: #689029;
   border-color: #689029;
 }

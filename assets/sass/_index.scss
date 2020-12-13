@@ -125,7 +125,7 @@ main {
 
         form {
 
-            &>div{
+            &>div {
                 margin-top: 25px;
             }
 
@@ -133,14 +133,14 @@ main {
                 color: #8f8f8f;
             }
 
-// Bura Islemir width verdiyime gore
+            // Bura Islemir width verdiyime gore
             // @media screen and (max-width:960px){
 
             //     .col-lg-2 {
             //         margin-right: 0px;
             //         width: 14%;
             //     }
-    
+
             //     .col-lg-1 {
             //         margin-right: 0px;
             //         width: 13%;
@@ -182,7 +182,8 @@ main {
                 background-color: #83AE3E;
                 border-color: #83AE3E;
                 margin-top: 33px;
-                margin-left: 22px;
+                width: 100%;
+
             }
 
             button:hover {
@@ -193,4 +194,184 @@ main {
         }
 
     }
+
+
+    section.popular-categories {
+        background-color: #f7f7f7;
+        padding: 90px 0px;
+
+        .container {
+
+            .title {
+                h2 {
+                    color: #46474a;
+                    font-size: 40px;
+                }
+
+                hr {
+                    opacity: 1;
+                    width: 80px;
+                    background-color: #83AE3E;
+                    color: #83AE3E;
+                    height: 2px;
+                    margin-top: 25px;
+                }
+            }
+
+            .catgeory {
+                margin-top: 30px;
+
+                a {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                a:hover {
+                    .caption {
+                        background-color: #83AE3E;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .caption {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 10px 28px;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    color: #fff;
+                    transition: .3s;
+
+                    .product-count {
+                        margin-right: 5px;
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    section.homes {
+        background-color: #fff;
+        padding: 90px 0px;
+
+        .container {
+
+            .title {
+                margin-bottom: 55px;
+
+                h2 {
+                    color: #46474a;
+                    font-size: 40px;
+                }
+
+                hr {
+                    opacity: 1;
+                    width: 80px;
+                    background-color: #83AE3E;
+                    color: #83AE3E;
+                    height: 2px;
+                    margin-top: 25px;
+                }
+            }
+
+            .single-home {
+                padding-bottom: 30px;
+
+                &>a {
+                    position: relative;
+                    display: block;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        transition: .3s;
+                    }
+                }
+
+                &>a:hover {
+                    img {
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+
+                .caption {
+                    margin-top: 15px;
+
+                    h4 {
+                        a {
+                            color: #83AE3E;
+                            text-decoration: none;
+                            font-weight: 500;
+                        }
+                    }
+
+                    &>span {
+                        font-size: 20px;
+                        font-weight: 500;
+                        display: block;
+                    }
+
+                    ul {
+                        display: inline-block;
+                        padding: 0;
+                        margin-top: 15px;
+
+                        li {
+                            list-style-type: none;
+
+                            i {
+                                color: #fc8816;
+                                margin-right: 7px;
+                            }
+
+                            span {
+                                color: #8f8f8f;
+                            }
+                        }
+                    }
+
+                    .second-ul {
+                        margin-left: 15px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+
+            &>a {
+                font-size: 18px;
+                font-weight: 500;
+                padding: 10px 42px;
+                background-color: #83AE3E;
+                border-color: #83AE3E;
+                margin-top: 33px;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 7px;
+                transition: .3s;
+
+            }
+
+            &>a:hover {
+                background-color: #689029;
+                border-color: #689029;
+            }
+        }
+    }
+
 }
