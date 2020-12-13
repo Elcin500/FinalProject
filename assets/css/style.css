@@ -739,16 +739,6 @@ main section.search form label {
   color: #8f8f8f;
 }
 
-main section.search form .col-md-2 {
-  margin-right: 0px;
-  width: 14%;
-}
-
-main section.search form .col-md-1 {
-  margin-right: 0px;
-  width: 13%;
-}
-
 main section.search form .no-label input {
   margin-top: 33px;
 }

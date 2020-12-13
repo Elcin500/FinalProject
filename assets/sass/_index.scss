@@ -133,15 +133,21 @@ main {
                 color: #8f8f8f;
             }
 
-            .col-md-2 {
-                margin-right: 0px;
-                width: 14%;
-            }
+// Bura Islemir width verdiyime gore
+            // @media screen and (max-width:960px){
 
-            .col-md-1 {
-                margin-right: 0px;
-                width: 13%;
-            }
+            //     .col-lg-2 {
+            //         margin-right: 0px;
+            //         width: 14%;
+            //     }
+    
+            //     .col-lg-1 {
+            //         margin-right: 0px;
+            //         width: 13%;
+            //     }
+            // }
+
+
 
             .no-label {
                 input {
