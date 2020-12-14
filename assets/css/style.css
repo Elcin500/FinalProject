@@ -943,4 +943,171 @@ main section.homes .container > a:hover {
   background-color: #689029;
   border-color: #689029;
 }
+
+main section.our-advantages {
+  background-color: #282e3e;
+  padding: 90px 0px;
+}
+
+main section.our-advantages .container .title {
+  margin-bottom: 20px;
+}
+
+main section.our-advantages .container .title h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
+main section.our-advantages .container .title hr {
+  opacity: 1;
+  width: 80px;
+  background-color: #83AE3E;
+  color: #83AE3E;
+  height: 2px;
+  margin-top: 25px;
+}
+
+main section.our-advantages .container .col-xs-12 {
+  margin-top: 30px;
+}
+
+main section.our-advantages .container .col-xs-12 .media-top {
+  padding-bottom: 20px;
+}
+
+main section.our-advantages .container .col-xs-12 .media-top div {
+  display: inline-block;
+  background-color: #fc8816;
+  border: 1px solid #fc8816;
+  border-radius: 40px;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+main section.our-advantages .container .col-xs-12 .media-top div i {
+  margin-top: 4px;
+  color: #fff;
+  font-size: 48px;
+}
+
+main section.our-advantages .container .col-xs-12 .media-bottom h3 {
+  color: #fff;
+  font-size: 24px;
+}
+
+main section.our-advantages .container .col-xs-12 .media-bottom p {
+  color: #b0b3bc;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+main section.agents {
+  background-color: #fff;
+  padding: 90px 0px;
+}
+
+main section.agents .container .title {
+  margin-bottom: 20px;
+}
+
+main section.agents .container .title h2 {
+  color: #46474a;
+  font-size: 40px;
+}
+
+main section.agents .container .title hr {
+  opacity: 1;
+  width: 80px;
+  background-color: #83AE3E;
+  color: #83AE3E;
+  height: 2px;
+  margin-top: 25px;
+}
+
+main section.agents .container .agents-carousel {
+  margin-top: 50px;
+}
+
+main section.agents .container .agents-carousel .item {
+  margin-right: 30px;
+  height: 224px;
+}
+
+main section.agents .container .agents-carousel .item .media-top .media-img {
+  padding-right: 18px;
+  display: inline-block;
+}
+
+main section.agents .container .agents-carousel .item .media-top .media-img img {
+  width: auto;
+}
+
+main section.agents .container .agents-carousel .item .media-top .media-body {
+  display: inline-block;
+  position: relative;
+  bottom: 13px;
+}
+
+main section.agents .container .agents-carousel .item .media-top .media-body h4 {
+  color: #83AE3E;
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+main section.agents .container .agents-carousel .item .media-top .media-body .p-top {
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+main section.agents .container .agents-carousel .item .media-top .media-body .p-bottom {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+main section.agents .container .agents-carousel .item .media-top .media-body .p-bottom span {
+  color: #46474a;
+}
+
+main section.agents .container .agents-carousel .item .media-top .media-body .p-bottom a {
+  text-decoration: none;
+  color: #46474a;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main section.agents .container .agents-carousel .item .media-top .media-body .p-bottom a:hover {
+  color: #83AE3E;
+}
+
+main section.agents .container .agents-carousel .item > p {
+  font-size: 14px;
+  color: #8f8f8f;
+  margin-bottom: 20px;
+}
+
+main section.agents .container .agents-carousel .item > a {
+  text-decoration: none;
+  padding: 10px 23px;
+  font-size: 18px;
+  border: 1px solid #fc8816;
+  border-radius: 5px;
+  letter-spacing: 0.96px;
+  background-color: #fc8816;
+  color: #fff;
+  font-weight: 600;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main section.agents .container .agents-carousel .item > a:hover {
+  background-color: #EF5A00;
+}
+
+@media screen and (max-width: 550px) {
+  main section.agents .container .agents-carousel .item {
+    margin-right: 0px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
