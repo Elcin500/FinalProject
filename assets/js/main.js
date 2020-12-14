@@ -242,7 +242,7 @@ $('.agents-carousel').owlCarousel({
       0:{
           items:1
       },
-      600:{
+      780:{
         items:2
       },
       1000:{
