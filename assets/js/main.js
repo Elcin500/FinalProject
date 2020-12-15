@@ -193,13 +193,15 @@ $(document).scroll(function () {
 
   ///// section first-carousel
 
+  let homePhotos=$('.photo-carousel .item');
 
-  let photo1=$('.photo-1').attr('data-setbg');
-  $('.photo-1').css("background-image",`url(${photo1})`);
-  let photo2=$('.photo-2').attr('data-setbg');
-  $('.photo-2').css("background-image",`url(${photo2})`);
-  let photo3=$('.photo-3').attr('data-setbg');
-  $('.photo-3').css("background-image",`url(${photo3})`);
+for (let index = 0; index < homePhotos.length; index++) {
+  const element = homePhotos[index];
+
+  let photo=$(element).attr('data-setbg');
+  $(element).css("background-image",`url(${photo})`); 
+
+}
 
   
 $('.photo-carousel').owlCarousel({
@@ -259,6 +261,40 @@ $('.agents-carousel').owlCarousel({
 
 let photo=$('.background-img').attr('data-setbg');
 $('.background-img').css("background-image",`url(${photo})`);
+
+
+let detailsPhotos=$('.single-photo-carousel .item');
+
+
+for (let index = 0; index < detailsPhotos.length; index++) {
+  const element = detailsPhotos[index];
+
+  let photoSingle=$(element).attr('data-setbg');
+  $(element).css("background-image",`url(${photoSingle})`); 
+
+}
+
+
+
+$('.single-photo-carousel').owlCarousel({
+loop:true,
+nav:false,
+dots:false,
+autoplay:true,
+autoplayTimeout:3000,
+autoplayHoverPause:true,
+responsive:{
+    0:{
+        items:1
+    },
+    1000:{
+        items:1
+    }
+},
+navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"]
+
+});
+
 
 
 
