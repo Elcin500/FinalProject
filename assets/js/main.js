@@ -235,7 +235,7 @@ $('.agents-carousel').owlCarousel({
   loop:true,
   nav:false,
   dots:false,
-  autoplay:false,
+  autoplay:true,
   autoplayTimeout:3000,
   autoplayHoverPause:true,
   responsive:{
@@ -250,6 +250,16 @@ $('.agents-carousel').owlCarousel({
       }
   }
 });
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////// Home Details ////////////////////////////////////////////////
+
+
+let photo=$('.background-img').attr('data-setbg');
+$('.background-img').css("background-image",`url(${photo})`);
+
 
 
  
