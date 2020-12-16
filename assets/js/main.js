@@ -263,43 +263,118 @@ let photo=$('.background-img').attr('data-setbg');
 $('.background-img').css("background-image",`url(${photo})`);
 
 
-let detailsPhotos=$('.single-photo-carousel .item');
+//let detailsPhotos=$('.single-photo-carousel .item');
 
 
-for (let index = 0; index < detailsPhotos.length; index++) {
-  const element = detailsPhotos[index];
+// for (let index = 0; index < detailsPhotos.length; index++) {
+//   const element = detailsPhotos[index];
 
-  let photoSingle=$(element).attr('data-setbg');
-  $(element).css("background-image",`url(${photoSingle})`); 
+//   let photoSingle=$(element).attr('data-setbg');
+//   $(element).css("background-image",`url(${photoSingle})`); 
 
-}
+// }
 
 
 
-$('.single-photo-carousel').owlCarousel({
-loop:true,
-nav:false,
-dots:false,
-autoplay:true,
-autoplayTimeout:3000,
-autoplayHoverPause:true,
-responsive:{
-    0:{
-        items:1
-    },
-    1000:{
-        items:1
-    }
-},
-navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"]
+// $('.single-photo-carousel').owlCarousel({
+// });
+
+
+
+
+
 
 });
 
 
+ //////////////////////////////////////////////////////////////////////
+$(document).ready(function() {
 
+  var sync1 = $("#single-photo-carousel");
+  var sync2 = $("#single-photo-carousel-down");
 
- 
+  var slidesPerPage = 5;
+
+  
+  var syncedSecondary = true;
+
+  sync1.owlCarousel({
+  loop:true,
+  nav:true,
+  dots:false,
+  autoplay:false,
+  autoplayTimeout:3000,
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  },
+  navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"]
+  }).on('changed.owl.carousel', syncPosition);
+
+  sync2
+      .on('initialized.owl.carousel', function() {
+          sync2.find(".owl-item").eq(0).addClass("current");
+      })
+      .owlCarousel({
+          items: slidesPerPage,
+          dots: false,
+          nav: true,
+          smartSpeed: 200,
+          slideSpeed: 500,
+          slideBy: 1, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+          responsiveRefreshRate: 100,
+          navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"]
+      }).on('changed.owl.carousel', syncPosition2);
+
+  function syncPosition(el) {
+      //if you set loop to false, you have to restore this next line
+      //var current = el.item.index;
+
+      //if you disable loop you have to comment this block
+      var count = el.item.count - 1;
+      var current = Math.round(el.item.index - (el.item.count / 2) - .5);
+
+      if (current < 0) {
+          current = count;
+      }
+      if (current > count) {
+          current = 0;
+      }
+
+      //end block
+
+      sync2
+          .find(".owl-item")
+          .removeClass("current")
+          .eq(current)
+          .addClass("current");
+      var onscreen = sync2.find('.owl-item.active').length - 1;
+      var start = sync2.find('.owl-item.active').first().index();
+      var end = sync2.find('.owl-item.active').last().index();
+
+      if (current > end) {
+          sync2.data('owl.carousel').to(current, 100, true);
+      }
+      if (current < start) {
+          sync2.data('owl.carousel').to(current - onscreen, 100, true);
+      }
+  }
+
+  function syncPosition2(el) {
+      if (syncedSecondary) {
+          var number = el.item.index;
+          sync1.data('owl.carousel').to(number, 100, true);
+      }
+  }
+
+  sync2.on("click", ".owl-item", function(e) {
+      e.preventDefault();
+      var number = $(this).index();
+      sync1.data('owl.carousel').to(number, 300, true);
+  });
 });
-
-
-
