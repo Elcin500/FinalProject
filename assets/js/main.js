@@ -409,10 +409,14 @@ $('#single-photo-carousel .item img').click(function (e) {
  console.log($('#single-photo-carousel .item img').css('margin'));
 });
 
+$('#single-photo-carousel .item img').click(function (e) { 
+    e.preventDefault();
+    e.stopPropagation();
+});
 
 $('.overlay').click(function (e) { 
     e.preventDefault();
-    document.getElementById("mySidenav").style.width = "0px";
+    
     $('.overlay').css('display', 'none');
 });
 
