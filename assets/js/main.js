@@ -259,6 +259,10 @@ $('.agents-carousel').owlCarousel({
 ////////////////////////////////// Home Details ////////////////////////////////////////////////
 
 
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+
+
+
 let photo=$('.background-img').attr('data-setbg');
 $('.background-img').css("background-image",`url(${photo})`);
 
@@ -402,23 +406,23 @@ $(document).ready(function() {
 
 ///////////////////     img fullscreen 
 
-$('#single-photo-carousel .item img').click(function (e) { 
-    e.preventDefault();
- $('.overlay').css('display', 'block');
+// $('#single-photo-carousel .item img').click(function (e) { 
+//     e.preventDefault();
+//  $('.overlay').css('display', 'block');
     
- console.log($('#single-photo-carousel .item img').css('margin'));
-});
+//  console.log($('#single-photo-carousel .item img').css('margin'));
+// });
 
-$('#single-photo-carousel .item img').click(function (e) { 
-    e.preventDefault();
-    e.stopPropagation();
-});
+// $('#single-photo-carousel .item img').click(function (e) { 
+//     e.preventDefault();
+//     e.stopPropagation();
+// });
 
-$('.overlay').click(function (e) { 
-    e.preventDefault();
+// $('.overlay').click(function (e) { 
+//     e.preventDefault();
     
-    $('.overlay').css('display', 'none');
-});
+//     $('.overlay').css('display', 'none');
+// });
 
 
 
@@ -436,3 +440,23 @@ $('.single-photo-fullscreen-carousel').owlCarousel({
     }
   });
   
+
+  (function () {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
