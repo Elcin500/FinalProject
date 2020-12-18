@@ -288,6 +288,9 @@ $('.background-img').css("background-image",`url(${photo})`);
 
 
  //////////////////////////////////////////////////////////////////////
+ 
+////////////////////    Carousels
+
 $(document).ready(function() {
 
   var sync1 = $("#single-photo-carousel");
@@ -295,6 +298,22 @@ $(document).ready(function() {
 
   var slidesPerPage = 5;
 
+
+  if ($(window).width()<=340) {
+    slidesPerPage = 1;
+   }
+
+  if ($(window).width()<=465 && $(window).width()>340 ) {
+   slidesPerPage = 2;
+  }
+
+  if ($(window).width()<=750 && $(window).width()>465) {
+     slidesPerPage = 3;
+    }
+
+    if ($(window).width()>=750 ) {
+        slidesPerPage = 5;
+       }
   
   var syncedSecondary = true;
 
@@ -326,7 +345,7 @@ $(document).ready(function() {
           nav: true,
           smartSpeed: 200,
           slideSpeed: 500,
-          slideBy: 1, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+          slideBy: 2, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
           responsiveRefreshRate: 100,
           navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"]
       }).on('changed.owl.carousel', syncPosition2);
@@ -378,3 +397,38 @@ $(document).ready(function() {
       sync1.data('owl.carousel').to(number, 300, true);
   });
 });
+
+
+
+///////////////////     img fullscreen 
+
+$('#single-photo-carousel .item img').click(function (e) { 
+    e.preventDefault();
+ $('.overlay').css('display', 'block');
+    
+ console.log($('#single-photo-carousel .item img').css('margin'));
+});
+
+
+$('.overlay').click(function (e) { 
+    e.preventDefault();
+    document.getElementById("mySidenav").style.width = "0px";
+    $('.overlay').css('display', 'none');
+});
+
+
+
+$('.single-photo-fullscreen-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+  });
+  

@@ -161,17 +161,27 @@
                 padding: 0px 45px;
 
                 .item {
-                    background: #C9C9C9;
+                    //background: #C9C9C9;
                     margin: 5px;
                     color: #FFF;
-                    -webkit-border-radius: 3px;
-                    -moz-border-radius: 3px;
                     border-radius: 3px;
                     text-align: center;
                     cursor: pointer;
+                    //width: 130px!important;
+
+                    // img{
+                    //     width: 130px!important;
+                    // }
 
                     h1 {
                         font-size: 18px;
+                    }
+                }
+
+                .current,
+                .active {
+                    .item {
+                        background-color: #fff !important;
                     }
                 }
 
@@ -222,6 +232,24 @@
                 .owl-next:hover {
                     i {
                         color: rgb(17, 17, 17);
+                    }
+                }
+            }
+
+
+            .table-details {
+                padding: 40px 0;
+
+                .title {
+
+                    h2 {
+                        color: #46474a;
+                        font-size: 30px;
+                    }
+
+                    hr {
+                        background-color: #5f5f5f;
+                        margin-bottom: 0;
                     }
                 }
             }
@@ -557,18 +585,51 @@
 
 
 
+#slider-container .control {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
 
+#slider-container .control.active {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    background-color: black;
+    opacity: 1;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    cursor: pointer;
 
-//   .owl-theme {
-//     .owl-nav {
-//       /*default owl-theme theme reset .disabled:hover links */
-//       [class*='owl-'] {
-//         transition: all .3s ease;
-//         &.disabled:hover {
-//          background-color: #D6D6D6;
-//         }   
-//       }
+    .single-photo-fullscreen-carousel {
+        .item {
+            .carousel-nav{
+                background-color: black;
+                height: 50px;
+                span{
+                    background-color: #fff;
+                }
+            }
+          img{
+              width: unset;
+              height: 600px;
+          }
+        }
+    }
 
-//     }
-//   }
+}

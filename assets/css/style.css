@@ -1268,7 +1268,6 @@ main section.agents .container .agents-carousel .item > a:hover {
 }
 
 .single-detail-main .container-fluid .col-left #single-photo-carousel-down .item {
-  background: #C9C9C9;
   margin: 5px;
   color: #FFF;
   border-radius: 3px;
@@ -1278,6 +1277,11 @@ main section.agents .container .agents-carousel .item > a:hover {
 
 .single-detail-main .container-fluid .col-left #single-photo-carousel-down .item h1 {
   font-size: 18px;
+}
+
+.single-detail-main .container-fluid .col-left #single-photo-carousel-down .current .item,
+.single-detail-main .container-fluid .col-left #single-photo-carousel-down .active .item {
+  background-color: #fff !important;
 }
 
 .single-detail-main .container-fluid .col-left #single-photo-carousel-down .current .item {
@@ -1323,6 +1327,20 @@ main section.agents .container .agents-carousel .item > a:hover {
 .single-detail-main .container-fluid .col-left #single-photo-carousel-down .owl-prev:hover i,
 .single-detail-main .container-fluid .col-left #single-photo-carousel-down .owl-next:hover i {
   color: #111111;
+}
+
+.single-detail-main .container-fluid .col-left .table-details {
+  padding: 40px 0;
+}
+
+.single-detail-main .container-fluid .col-left .table-details .title h2 {
+  color: #46474a;
+  font-size: 30px;
+}
+
+.single-detail-main .container-fluid .col-left .table-details .title hr {
+  background-color: #5f5f5f;
+  margin-bottom: 0;
 }
 
 .single-detail-main .container-fluid .col-right {
@@ -1619,5 +1637,51 @@ main section.agents .container .agents-carousel .item > a:hover {
   font-weight: 500;
   display: block;
   color: #46474a;
+}
+
+#slider-container .control {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+
+#slider-container .control.active {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  background-color: black;
+  opacity: 1;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlay .single-photo-fullscreen-carousel .item .carousel-nav {
+  background-color: black;
+  height: 50px;
+}
+
+.overlay .single-photo-fullscreen-carousel .item .carousel-nav span {
+  background-color: #fff;
+}
+
+.overlay .single-photo-fullscreen-carousel .item img {
+  width: unset;
+  height: 600px;
 }
 /*# sourceMappingURL=style.css.map */
