@@ -463,4 +463,42 @@ $('.single-photo-fullscreen-carousel').owlCarousel({
   //////////////////////////////////////////////////////////////////////////
   ///////////////////////      Contact            ////////////////////////////////
 
-  
+  $('.login-form ul li').click(function (e) { 
+    e.preventDefault();
+
+    let clas=$(e.currentTarget).attr('class');
+    let currentLi=$(e.currentTarget);
+    
+    if ($(currentLi).hasClass('selected')) {
+      return;
+    }
+    
+    if ($(currentLi).hasClass('li-registr')) {
+      $('.login-form ul .li-registr').addClass('selected');
+      $('.login-form ul .li-login').removeClass('selected');
+
+      if ($('.registr-form-second').hasClass('d-none')) {
+        $('.registr-form-second').removeClass('d-none');
+      }
+
+      if (!$('.login-form-first').hasClass('d-none')) {
+        $('.login-form-first').addClass('d-none');
+      }
+
+    }
+
+    if ($(currentLi).hasClass('li-login')) {
+      $('.login-form ul .li-login').addClass('selected');
+      $('.login-form ul .li-registr').removeClass('selected');
+
+      if (!$('.registr-form-second').hasClass('d-none')) {
+        $('.registr-form-second').addClass('d-none');
+      }
+
+      if ($('.login-form-first').hasClass('d-none')) {
+        $('.login-form-first').removeClass('d-none');
+      }
+
+    }
+    
+  });

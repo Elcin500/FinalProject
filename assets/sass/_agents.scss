@@ -1,0 +1,98 @@
+.agents-main{
+    padding: 90px 0;
+    .container{
+        .title {
+            margin-bottom: 20px;
+
+            h2 {
+                color: #46474a;
+                font-size: 40px;
+            }
+
+            hr {
+                opacity: 1;
+                width: 80px;
+                background-color: #83AE3E;
+                color: #83AE3E;
+                height: 2px;
+                margin-top: 25px;
+            }
+        }
+        .agent {
+            margin-right: 30px;
+            height: 224px;
+
+            .media-top {
+                .media-img {
+                    padding-right: 18px;
+                    display: inline-block;
+
+                    img {
+                        width: auto;
+                    }
+                }
+
+                .media-body {
+                    display: inline-block;
+                    position: relative;
+                    top: 30px;
+
+                    a{
+                        text-decoration: none;
+                        h4 {
+                            color: #83AE3E;
+                            font-size: 20px;
+                            margin-bottom: 3px;
+                            transition: .3s;
+                        }
+                    }
+                    &>a:hover{
+                        h4{
+                            color: #689029;
+                        }
+                    }
+                    
+
+                    .p-top {
+                        font-size: 14px;
+                        color: #8f8f8f;
+                    }
+
+                    .p-bottom {
+                        font-size: 16px;
+                        font-weight: 600;
+
+                        span {
+                            color: #46474a;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: #46474a;
+                            transition: .3s;
+                        }
+
+                        a:hover {
+                            color: #83AE3E;
+                        }
+
+                    }
+
+                }
+            }
+
+            &>p {
+                font-size: 14px;
+                color: #8f8f8f;
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+
+        }
+        @media screen and (max-width:550px) {
+            .agent {
+                margin-right: 0px;
+            }
+        }
+    }
+}
