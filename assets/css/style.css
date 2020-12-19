@@ -1810,4 +1810,181 @@ main section.agents .container .agents-carousel .item > a:hover {
   width: unset;
   height: 600px;
 }
+
+.contact-main {
+  padding: 90px 0;
+}
+
+@media screen and (max-width: 550px) {
+  .contact-main .container-fluid {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+.contact-main .container-fluid {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.contact-main .col-left .title hr {
+  opacity: 1;
+  width: 80px;
+  background-color: #83AE3E;
+  color: #83AE3E;
+  height: 2px;
+  margin-top: 25px;
+}
+
+.contact-main .col-left p {
+  color: #8f8f8f;
+  font-size: 14px;
+}
+
+.contact-main .col-left form {
+  margin-top: 20px;
+}
+
+.contact-main .col-left form input,
+.contact-main .col-left form textarea {
+  border-radius: 2px;
+  padding: 11px 20px 13px;
+}
+
+.contact-main .col-left form input:focus,
+.contact-main .col-left form textarea:focus {
+  border-color: #83AE3E;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact-main .col-left form button {
+  background-color: #83AE3E;
+  border: 1px solid #83AE3E;
+  width: 50%;
+  padding: 10px 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.contact-main .col-left form button:hover {
+  background-color: #689029;
+  border-color: #689029;
+}
+
+.contact-main .col-right {
+  padding-left: 45px;
+}
+
+.contact-main .col-right .title h2 {
+  color: #46474a;
+  font-size: 30px;
+}
+
+.contact-main .col-right .title hr {
+  background-color: #5f5f5f;
+  margin-bottom: 0;
+}
+
+.contact-main .col-right .contact-phone .body,
+.contact-main .col-right .contact-email .body {
+  margin-top: 5px;
+}
+
+.contact-main .col-right .contact-phone .body a,
+.contact-main .col-right .contact-email .body a {
+  text-decoration: none;
+  display: block;
+  margin-left: 3px;
+  color: #83AE3E;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contact-main .col-right .contact-phone .body a:hover,
+.contact-main .col-right .contact-email .body a:hover {
+  color: #689029;
+}
+
+.contact-main .col-right .contact-phone .body a {
+  color: #8f8f8f;
+}
+
+.contact-main .col-right .contact-email {
+  padding-top: 40px;
+}
+
+.contact-main .col-right .contact-socials {
+  padding-top: 40px;
+}
+
+.contact-main .col-right .contact-socials .body {
+  margin-top: 10px;
+}
+
+.contact-main .col-right .contact-socials .body ul {
+  padding-left: 0;
+}
+
+.contact-main .col-right .contact-socials .body ul li {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.contact-main .col-right .contact-socials .body ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contact-main .col-right .contact-socials .body ul li a i {
+  font-size: 16px;
+}
+
+.contact-main .col-right .contact-socials .body ul li .facebook {
+  background-color: #395b98;
+}
+
+.contact-main .col-right .contact-socials .body ul li .facebook:hover {
+  background-color: #2e497a;
+}
+
+.contact-main .col-right .contact-socials .body ul li .twitter {
+  background-color: #2ca7e0;
+}
+
+.contact-main .col-right .contact-socials .body ul li .twitter:hover {
+  background-color: #2386b3;
+}
+
+.contact-main .col-right .contact-socials .body ul li .google {
+  background-color: #d95139;
+}
+
+.contact-main .col-right .contact-socials .body ul li .google:hover {
+  background-color: #AE412E;
+}
+
+.contact-main .col-right .contact-adress,
+.contact-main .col-right .contact-hours {
+  padding-top: 40px;
+}
+
+.contact-main .col-right .contact-adress .body,
+.contact-main .col-right .contact-hours .body {
+  margin-top: 5px;
+}
+
+.contact-main .col-right .contact-adress .body p,
+.contact-main .col-right .contact-hours .body p {
+  color: #8f8f8f;
+  font-size: 14px;
+}
 /*# sourceMappingURL=style.css.map */

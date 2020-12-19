@@ -259,9 +259,6 @@ $('.agents-carousel').owlCarousel({
 ////////////////////////////////// Home Details ////////////////////////////////////////////////
 
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-
-
 
 let photo=$('.background-img').attr('data-setbg');
 $('.background-img').css("background-image",`url(${photo})`);
@@ -460,3 +457,10 @@ $('.single-photo-fullscreen-carousel').owlCarousel({
         }, false)
       })
   })()
+
+
+
+  //////////////////////////////////////////////////////////////////////////
+  ///////////////////////      Contact            ////////////////////////////////
+
+  
