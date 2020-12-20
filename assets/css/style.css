@@ -665,7 +665,7 @@ main .photo-carousel .item .small-description a:hover {
   background-color: #689029;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 465px) {
   main .photo-carousel .item .small-description {
     left: 70px;
     width: 270px;
@@ -2184,6 +2184,325 @@ main section.agents .container .agents-carousel .item > a:hover {
 }
 
 .login-form form button:hover {
+  background-color: #689029;
+  border-color: #689029;
+}
+
+.agentDetails-main {
+  padding: 90px 0;
+  background-color: #f7f7f7;
+}
+
+@media screen and (max-width: 1200px) {
+  .agentDetails-main .col-left .agent-img {
+    margin-top: 0px !important;
+  }
+}
+
+.agentDetails-main .title h2 {
+  color: #46474a;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.agentDetails-main .title hr {
+  opacity: 1;
+  background-color: #dcdcdc;
+  color: #dcdcdc;
+  margin-bottom: 0;
+}
+
+.agentDetails-main .col-left .agent-img {
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 4px 0px;
+          box-shadow: 0px 0px 4px 0px;
+  max-width: 340px;
+  margin-top: -250px;
+  background-color: #ffffff;
+}
+
+.agentDetails-main .col-left .agent-img img {
+  width: 100%;
+  height: auto;
+}
+
+.agentDetails-main .col-left .agent-contact {
+  margin-top: 40px;
+}
+
+.agentDetails-main .col-left .agent-contact > p {
+  color: #8f8f8f;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.agentDetails-main .col-left .agent-contact form {
+  margin-top: 20px;
+}
+
+.agentDetails-main .col-left .agent-contact form label {
+  color: #8f8f8f;
+}
+
+.agentDetails-main .col-left .agent-contact form input,
+.agentDetails-main .col-left .agent-contact form textarea {
+  border-radius: 2px;
+  padding: 11px 20px 13px;
+}
+
+.agentDetails-main .col-left .agent-contact form input:focus,
+.agentDetails-main .col-left .agent-contact form textarea:focus {
+  border-color: #83AE3E;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.agentDetails-main .col-left .agent-contact form button {
+  background-color: #83AE3E;
+  border: 1px solid #83AE3E;
+  width: 50%;
+  padding: 10px 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.agentDetails-main .col-left .agent-contact form button:hover {
+  background-color: #689029;
+  border-color: #689029;
+}
+
+.agentDetails-main .col-right {
+  padding-left: 45px;
+}
+
+.agentDetails-main .col-right .info h4 {
+  font-size: 18px;
+  color: #46474a;
+  font-weight: 700;
+}
+
+.agentDetails-main .col-right .info p {
+  color: #8f8f8f;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.agentDetails-main .col-right .info a {
+  color: #83AE3E;
+  font-size: 14px;
+}
+
+.agentDetails-main .col-right .info a:hover {
+  color: #689029;
+}
+
+.agentDetails-main .col-right .agent-description {
+  margin-top: 60px;
+}
+
+.agentDetails-main .col-right .agent-description p {
+  font-size: 14px;
+  color: #8f8f8f;
+  margin-top: 10px;
+  letter-spacing: .5px;
+}
+
+.agentDetails-main .col-right .agent-socials {
+  margin-top: 20px;
+}
+
+.agentDetails-main .col-right .agent-socials .body {
+  margin-top: 20px;
+}
+
+.agentDetails-main .col-right .agent-socials .body ul {
+  padding-left: 0;
+}
+
+.agentDetails-main .col-right .agent-socials .body ul li {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.agentDetails-main .col-right .agent-socials .body ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.agentDetails-main .col-right .agent-socials .body ul li a i {
+  font-size: 16px;
+}
+
+.agentDetails-main .col-right .agent-socials .body ul li .facebook {
+  background-color: #395b98;
+}
+
+.agentDetails-main .col-right .agent-socials .body ul li .facebook:hover {
+  background-color: #2e497a;
+}
+
+.agentDetails-main .col-right .agent-socials .body ul li .twitter {
+  background-color: #2ca7e0;
+}
+
+.agentDetails-main .col-right .agent-socials .body ul li .twitter:hover {
+  background-color: #2386b3;
+}
+
+.agentDetails-main .col-right .agent-socials .body ul li .google {
+  background-color: #d95139;
+}
+
+.agentDetails-main .col-right .agent-socials .body ul li .google:hover {
+  background-color: #AE412E;
+}
+
+.agent-homes {
+  padding: 90px 0;
+}
+
+.agent-homes .title {
+  margin-bottom: 25px;
+}
+
+.agent-homes .title h2 {
+  color: #46474a;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.agent-homes .title hr {
+  opacity: 1;
+  width: 80px;
+  background-color: #83AE3E;
+  color: #83AE3E;
+  height: 2px;
+  margin-bottom: 0;
+}
+
+.agent-homes .col-left .row .single-home {
+  padding-bottom: 30px;
+}
+
+.agent-homes .col-left .row .single-home > a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.agent-homes .col-left .row .single-home > a img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.agent-homes .col-left .row .single-home > a:hover img {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.agent-homes .col-left .row .single-home .caption {
+  margin-top: 15px;
+}
+
+.agent-homes .col-left .row .single-home .caption h4 a {
+  color: #83AE3E;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.agent-homes .col-left .row .single-home .caption > span {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+}
+
+.agent-homes .col-left .row .single-home .caption ul {
+  display: inline-block;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.agent-homes .col-left .row .single-home .caption ul li {
+  list-style-type: none;
+}
+
+.agent-homes .col-left .row .single-home .caption ul li i {
+  color: #fc8816;
+  margin-right: 7px;
+}
+
+.agent-homes .col-left .row .single-home .caption ul li span {
+  color: #8f8f8f;
+}
+
+.agent-homes .col-left .row .single-home .caption .second-ul {
+  margin-left: 15px;
+}
+
+.agent-homes .col-left .row .single-home .caption p {
+  font-size: 14px;
+}
+
+.agent-homes .col-right {
+  padding-left: 45px;
+}
+
+.agent-homes .col-right form {
+  margin-top: 20px;
+}
+
+.agent-homes .col-right form label {
+  color: #8f8f8f;
+}
+
+.agent-homes .col-right form .no-label input {
+  margin-top: 33px;
+}
+
+.agent-homes .col-right form input,
+.agent-homes .col-right form textarea {
+  border-radius: 2px;
+  padding: 11px 20px 13px;
+}
+
+.agent-homes .col-right form input:focus,
+.agent-homes .col-right form textarea:focus {
+  border-color: #83AE3E;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.agent-homes .col-right form select {
+  border-radius: 2px;
+  padding: 11px 20px 13px;
+}
+
+.agent-homes .col-right form select:focus {
+  border-color: #83AE3E;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.agent-homes .col-right form button {
+  background-color: #83AE3E;
+  border: 1px solid #83AE3E;
+  width: 50%;
+  padding: 10px 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.agent-homes .col-right form button:hover {
   background-color: #689029;
   border-color: #689029;
 }

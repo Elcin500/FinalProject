@@ -1,0 +1,339 @@
+.agentDetails-main {
+    padding: 90px 0;
+    background-color: #f7f7f7;
+
+    
+
+    @media screen and (max-width:1200px) {
+        .col-left {
+            .agent-img {
+                margin-top: 0px !important;
+            }
+        }
+    }
+
+    .title {
+
+        h2 {
+            color: #46474a;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        hr {
+            opacity: 1;
+            //width: 80px;
+            background-color: #dcdcdc;
+            color: #dcdcdc;
+            //height: 2px;
+            //margin-top: 25px;
+            margin-bottom: 0;
+        }
+    }
+
+    .col-left {
+        .agent-img {
+            padding: 10px;
+            box-shadow: 0px 0px 4px 0px;
+            max-width: 340px;
+            margin-top: -250px;
+            background-color: #ffffff;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .agent-contact {
+            margin-top: 40px;
+
+            &>p {
+                color: #8f8f8f;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+
+            form {
+                margin-top: 20px;
+
+                label {
+                    color: #8f8f8f;
+                }
+
+                input,
+                textarea {
+                    border-radius: 2px;
+                    padding: 11px 20px 13px;
+                }
+
+                input:focus,
+                textarea:focus {
+
+                    border-color: #83AE3E;
+                    box-shadow: none;
+                }
+
+                button {
+                    background-color: #83AE3E;
+                    border: 1px solid #83AE3E;
+                    width: 50%;
+                    padding: 10px 10px;
+                    font-weight: 500;
+                    font-size: 16px;
+
+                }
+
+                button:hover {
+                    background-color: #689029;
+                    border-color: #689029;
+                }
+            }
+        }
+
+    }
+
+    .col-right {
+        padding-left: 45px;
+
+        .info {
+            h4 {
+                font-size: 18px;
+                color: #46474a;
+                font-weight: 700;
+            }
+
+            p {
+                color: #8f8f8f;
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+
+            a {
+                color: #83AE3E;
+                font-size: 14px;
+            }
+
+            a:hover {
+                color: #689029;
+            }
+
+        }
+
+        .agent-description {
+            margin-top: 60px;
+
+            p {
+                font-size: 14px;
+                color: #8f8f8f;
+                margin-top: 10px;
+                letter-spacing: .5px;
+            }
+        }
+
+        .agent-socials{
+            margin-top: 20px;
+            .body {
+                margin-top: 20px;
+
+                ul {
+                    padding-left: 0;
+
+                    li {
+                        margin-right: 10px;
+                        display: inline-block;
+
+                        a {
+                            display: inline-block;
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            border-radius: 50%;
+                            font-size: 18px;
+                            text-align: center;
+                            color: #fff;
+                            transition: .3s;
+
+                            i {
+                                font-size: 16px;
+                            }
+                        }
+
+                        .facebook {
+                            background-color: #395b98;
+                        }
+
+                        .facebook:hover {
+                            background-color: #2e497a;
+                        }
+
+                        .twitter {
+                            background-color: #2ca7e0;
+                        }
+
+                        .twitter:hover {
+                            background-color: #2386b3;
+                        }
+
+                        .google {
+                            background-color: #d95139;
+                        }
+
+                        .google:hover {
+                            background-color: #AE412E;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.agent-homes {
+    padding: 90px 0;
+
+    .title {
+        margin-bottom: 25px;
+
+        h2 {
+            color: #46474a;
+            font-size: 35px;
+            font-weight: 700;
+        }
+
+        hr {
+            opacity: 1;
+            width: 80px;
+            background-color: #83AE3E;
+            color: #83AE3E;
+            height: 2px;
+            //margin-top: 25px;
+            margin-bottom: 0;
+        }
+    }
+
+    .col-left {
+        .row {
+            .single-home {
+                padding-bottom: 30px;
+
+                &>a {
+                    position: relative;
+                    display: block;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        transition: .3s;
+                    }
+                }
+
+                &>a:hover {
+                    img {
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+
+                .caption {
+                    margin-top: 15px;
+
+                    h4 {
+                        a {
+                            color: #83AE3E;
+                            text-decoration: none;
+                            font-weight: 500;
+                        }
+                    }
+
+                    &>span {
+                        font-size: 20px;
+                        font-weight: 500;
+                        display: block;
+                    }
+
+                    ul {
+                        display: inline-block;
+                        padding: 0;
+                        margin-top: 15px;
+
+                        li {
+                            list-style-type: none;
+
+                            i {
+                                color: #fc8816;
+                                margin-right: 7px;
+                            }
+
+                            span {
+                                color: #8f8f8f;
+                            }
+                        }
+                    }
+
+                    .second-ul {
+                        margin-left: 15px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .col-right{
+        padding-left: 45px;
+        form {
+            margin-top: 20px;
+
+            label {
+                color: #8f8f8f;
+            }
+
+            .no-label {
+                input {
+                    margin-top: 33px;
+                }
+            }
+
+            input,
+            textarea {
+                border-radius: 2px;
+                padding: 11px 20px 13px;
+            }
+
+            input:focus,
+            textarea:focus {
+
+                border-color: #83AE3E;
+                box-shadow: none;
+            }
+            select {
+                border-radius: 2px;
+                padding: 11px 20px 13px;
+            }
+
+            select:focus {
+                border-color: #83AE3E;
+                box-shadow: none;
+            }
+
+            button {
+                background-color: #83AE3E;
+                border: 1px solid #83AE3E;
+                width: 50%;
+                padding: 10px 10px;
+                font-weight: 500;
+                font-size: 16px;
+
+            }
+
+            button:hover {
+                background-color: #689029;
+                border-color: #689029;
+            }
+        }
+    }
+}
