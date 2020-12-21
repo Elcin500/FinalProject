@@ -1,0 +1,33 @@
+section.homes{
+    .single-home{
+        .caption{
+            .edit
+            ,.delete{
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 10px 42px;
+                margin-top: 33px;
+                text-decoration: none;
+                border-radius: 7px;
+                transition: .3s;
+            }
+            .edit{
+                background-color: #f1c40f;
+                border-color: #f1c40f;
+            }
+            .edit:hover{
+                background-color: #be9c14;
+                border-color: #be9c14;
+            }
+            .delete{
+                background-color: #d63031;
+                border-color: #d63031;
+            }
+            .delete:hover{
+                background-color: #a01a1a;
+                border-color: #a01a1a;
+            }
+        }
+    }
+}

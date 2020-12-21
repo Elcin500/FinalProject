@@ -2120,6 +2120,10 @@ main section.agents .container .agents-carousel .item > a:hover {
   transition: .3s;
 }
 
+.login-form ul li.li-registr {
+  margin-right: 20px;
+}
+
 .login-form ul li:first-child {
   margin-right: 20px;
 }
@@ -2201,7 +2205,7 @@ main section.agents .container .agents-carousel .item > a:hover {
 
 .agentDetails-main .title h2 {
   color: #46474a;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -2210,6 +2214,22 @@ main section.agents .container .agents-carousel .item > a:hover {
   background-color: #dcdcdc;
   color: #dcdcdc;
   margin-bottom: 0;
+}
+
+.agentDetails-main .title-agent-name h2 {
+  color: #46474a;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.agentDetails-main .title-agent-name hr {
+  opacity: 1;
+  width: 80px;
+  background-color: #83AE3E;
+  color: #83AE3E;
+  height: 2px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .agentDetails-main .col-left .agent-img {
@@ -2589,5 +2609,38 @@ section.addhome-main form button {
 section.addhome-main form button:hover {
   background-color: #689029;
   border-color: #689029;
+}
+
+section.homes .single-home .caption .edit
+, section.homes .single-home .caption .delete {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 42px;
+  margin-top: 33px;
+  text-decoration: none;
+  border-radius: 7px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.homes .single-home .caption .edit {
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+}
+
+section.homes .single-home .caption .edit:hover {
+  background-color: #be9c14;
+  border-color: #be9c14;
+}
+
+section.homes .single-home .caption .delete {
+  background-color: #d63031;
+  border-color: #d63031;
+}
+
+section.homes .single-home .caption .delete:hover {
+  background-color: #a01a1a;
+  border-color: #a01a1a;
 }
 /*# sourceMappingURL=style.css.map */
