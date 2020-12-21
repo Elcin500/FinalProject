@@ -2506,4 +2506,88 @@ main section.agents .container .agents-carousel .item > a:hover {
   background-color: #689029;
   border-color: #689029;
 }
+
+section.addhome-main {
+  padding: 90px 0;
+}
+
+section.addhome-main .container-fluid {
+  padding: 0 80px;
+}
+
+@media screen and (max-width: 600px) {
+  section.addhome-main .container-fluid {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+section.addhome-main .title h2 {
+  font-size: 35px;
+  color: #46474a;
+  font-weight: 700;
+}
+
+section.addhome-main .title hr {
+  opacity: 1;
+  width: 80px;
+  background-color: #83AE3E;
+  color: #83AE3E;
+  height: 2px;
+  margin-top: 25px;
+}
+
+section.addhome-main form > .col-12 > .row > div {
+  margin-bottom: 20px;
+}
+
+section.addhome-main form > .col-right {
+  padding-left: 45px;
+}
+
+section.addhome-main form label {
+  color: #8f8f8f;
+}
+
+section.addhome-main form .no-label input {
+  margin-top: 33px;
+}
+
+section.addhome-main form input,
+section.addhome-main form textarea {
+  border-radius: 2px;
+  padding: 11px 20px 13px;
+}
+
+section.addhome-main form input:focus,
+section.addhome-main form textarea:focus {
+  border-color: #83AE3E;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section.addhome-main form select {
+  border-radius: 2px;
+  padding: 11px 20px 13px;
+}
+
+section.addhome-main form select:focus {
+  border-color: #83AE3E;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section.addhome-main form button {
+  background-color: #83AE3E;
+  border: 1px solid #83AE3E;
+  width: 50%;
+  padding: 10px 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+section.addhome-main form button:hover {
+  background-color: #689029;
+  border-color: #689029;
+}
 /*# sourceMappingURL=style.css.map */
