@@ -527,3 +527,24 @@ $('.single-photo-fullscreen-carousel').owlCarousel({
     }
     
   });
+
+
+
+
+
+  //////////////////////////////////////////////////////////////////
+
+  $('.single-home .like').click(function (e) { 
+    e.preventDefault();
+    
+    if ($(e.currentTarget.children[0]).hasClass('fas fa-heart')) {
+      $(e.currentTarget).html('<i class="far fa-heart"></i>');
+
+    }
+    else{
+      $(e.currentTarget).html('<i style="color:#EA2027" class="fas fa-heart"></i>');
+    }
+
+    
+    
+  });
